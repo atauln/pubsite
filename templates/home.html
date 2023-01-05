@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<style>
+
+    body {
+        background-color: #FAFAFF;
+    }
+
+    .main-div {
+        margin-top: 20px;
+        margin-left:0px;
+        margin-right:0px;
+        align-self: center;
+        background-color: rgba(48, 52, 63, 0.1);
+        box-sizing: border-box;
+        padding: 25px;
+
+    }
+
+    div {
+        border-radius: 15px;
+    }
+
+    h1.heading {
+        color:#007CBE
+    }
+
+</style>
+
+<div class="main-div col-sm-8 mx-auto">
+    <h1 class="heading">Welcome.</h1>
+    <p class="lead">
+        Here you will find the works and ongoings of Ata Noor. Ata is a software engineering major at the Rochester Institute of Technology.
+
+    </p>
+</div>
+
+{% endblock %}
