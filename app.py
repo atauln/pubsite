@@ -17,3 +17,7 @@ def contact():
 @app.route('/technologies')
 def technologies():
     return render_template('/technologies')
+
+@app.route('/resume')
+def resume():
+    return render_template('/resume')

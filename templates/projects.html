@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects{% endblock %}
+
+{% macro project(name, description, year) %}
+<h3><a class="link-primary" target="_blank" href="https://github.com/atauln/{{name}}">{{name}}</a> <span style="color: rgba(48, 52, 63, 0.8); font-size:75%">{{year}}</span></h3>
+<p>{{description}}</p>
+{% endmacro %}
+
+{% block content %}
+
+<div class="main-div col-sm-8 mx-auto">
+    <h1 class="heading" style="margin-bottom:15px">Projects.</h1>
+    {{project('TigerWallet', 'Flask application that utilized my university\'s dining system\'s online portal to create calculate and display information in a more
+    user friendly manner. It utilized containerization, web development, as well as a MySQL backend.', '2022')}}
+    {{project('PARCSTAR', 'Sheet music generator for guitars and other string based instrument. Utilized a Java backend, with web sockets to connect to a web interface
+    and perform Fast Fourier Transforms on microphone audio.', '2022')}}
+</div>
+
+{% endblock %}
