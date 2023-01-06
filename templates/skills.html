@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Technologies{% endblock %}
+
+{% macro list_items(header, items) %}
+<div class="skill_item">
+    <h4>{{header}}:</h4>
+    <ol>
+        {% for item in items %}
+        <li><h6>{{item}}</h6></li>
+        {% endfor %}
+    </ol>
+</div>
+{% endmacro %}
+
+{% block content %}
+<style>
+    .technology_item {
+        margin-right: 10px;
+    }
+</style>
+<h1 class="heading" style="margin-bottom:15px">Skills.</h1>
+{{list_items('Languages', ['Python', 'Java', 'Javascript', 'Kotlin', 'Scheme'])}}
+{{list_items('Frameworks', ['Flask', 'Spring'])}}
+{{list_items('Technologies', ['Docker', 'Podman', 'Sentry', 'MySQL', 'SQLite'])}}
+{{list_items('Operating Systems', ['Windows 10', 'Windows 11', 'MacOS', 'Debian', 'Ubuntu', 'Arch Linux'])}}
+{% endblock %}

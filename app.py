@@ -14,9 +14,9 @@ def projects():
 def contact():
     return render_template('contact.html')
 
-@app.route('/technologies')
+@app.route('/skills')
 def technologies():
-    return render_template('technologies.html')
+    return render_template('skills.html')
 
 @app.route('/resume')
 def resume():
