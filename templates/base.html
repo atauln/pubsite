@@ -45,20 +45,39 @@
     <body>
       <style>
         body {
-            background-color: #FAFAFF;
+          background-color: #FAFAFF;
         }
         .main-div {
-            margin-top: 20px;
-            background-color: rgba(48, 52, 63, 0.1);
-            box-sizing: border-box;
-            padding: 25px;
-            height:fit-content;
+          margin-top: 20px;
+          background-color: rgba(48, 52, 63, 0.1);
+          box-sizing: border-box;
+          padding: 25px;
+          height:fit-content;
         }
         div {
-            border-radius: 15px;
+          border-radius: 15px;
         }
         h1.heading {
-            color:#007CBE
+          color:#007CBE
+        }
+        #resume {
+          width:-moz-available; 
+          height: 45rem; 
+        }
+        @media screen and (max-width: 720px) {
+          .main-div {
+            margin:auto;
+          }
+          #resume {
+            width:-moz-available; 
+            height: 45rem;
+          }
+        }
+        @media screen and (max-width: 1200px) {
+          #skill-icons {
+            visibility: hidden;
+            width: 0px;
+          }
         }
     </style>
       <div class="main-div col-sm-8 mx-auto">

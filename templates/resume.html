@@ -4,6 +4,5 @@
 
 {% block content %}
 <h1 class="heading" style="margin-bottom:15px">Resume.</h1>
-<iframe title="Ata's Resume" src="{{url_for('static', filename='cv/resume.pdf')}}" 
-style="width:-moz-available; height: 45rem; margin-right:0px; margin-left:0px"></iframe>
+<iframe title="Ata's Resume" id="resume" src="{{url_for('static', filename='cv/resume.pdf')}}"/>
 {% endblock %}
