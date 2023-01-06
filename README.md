@@ -21,6 +21,4 @@ Or, manually:
 1. `podman build -t dev`
 2. `podman run -p 8080:8080 dev`
 
-## Viewing
-
 The website will be hosted on `localhost:8080`.
