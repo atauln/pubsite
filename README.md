@@ -1,6 +1,11 @@
 # Portfolio Site
 
 This website will be a portfolio for people to view my achievements and my current projects.
+It is currently being publicly hosted at: <https://atom.cs.house>
+
+## Screenshots
+
+![Front Page](/static/images/front-page.png)
 
 ## Building
 
