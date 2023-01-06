@@ -2,8 +2,14 @@
 
 {% block title %}Contact{% endblock %}
 
+{% macro contact(source, pref, info) %}
+<p><b>{{source}}:</b> <a href="{{pref ~ info}}" target="_blank">{{info}}</a></p>
+{% endmacro %}
+
 {% block content %}
 <h1 class="heading" style="margin-bottom:15px">Contact.</h1>
-<p><b>E-mail:</b> <a href="mailto:ataulnoor75@gmail.com">ataulnoor75@gmail.com</a></p>
-<p><b>Phone Number:</b> <a href="tel:+15135826809">+1 (513) 582-6809</a></p>
+{{contact('E-mail', 'mailto:', 'ataulnoor75@gmail.com')}}
+{{contact('Phone Number', 'tel:', '+1 (513) 582 6809')}}
+{{contact('LinkedIn', 'https://www.linkedin.com/in', '/atanoor')}}
+{{contact('Github', 'https://www.github.com/', 'atauln')}}
 {% endblock %}
